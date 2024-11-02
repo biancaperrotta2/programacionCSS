@@ -1,0 +1,139 @@
+body{
+font-family: Arial, sans-serif;
+}
+
+header{
+    text-align: center;
+    padding: 20px;
+    text-transform: none;
+    font-weight: bold;
+    color: white;
+    background-color: #4d4d4d;
+}
+.texto p{
+    text-align: justify;
+    text-transform: capitalize;
+    font-size: 1.2em;
+}
+h2{
+    border-bottom: 1px solid black; /* Línea de separación debajo */
+}
+.parrafo{
+    text-transform: capitalize;
+}
+.cita{ 
+    padding-left: 10px; 
+    border-left: 5px solid #ccc; 
+    font-style: italic; background-color: #f1f1f1;
+    margin-left: 20px; 
+    margin-top: 10px; 
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;          
+}
+.punto2{
+    background-color: white;
+}
+.punto3{
+    margin: 10px;
+}
+.caja1{
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.caja2{
+    padding-left: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: blanchedalmond;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+}
+.relativo{
+    position: relative;
+    margin-bottom: 40px;
+    left: 5px;
+    background-color:  #b5e0f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+.absoluto{
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    left: 800px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #31af9a;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px){
+    body{
+        background-color:  #e0e0e0;
+    }
+    h1{
+        font-size: 14px;
+    }
+    section{
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item{
+    border-radius: 5px;
+    color: white;
+    justify-content: center;
+    background-color: #ad7dce;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.animacion1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: moverArribaAbajo 2s infinite alternate;
+    margin: 10px;
+}
+
+.animacion2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    animation: rotar 2s infinite linear;
+    margin: 10px;
+}
+
+@keyframes moverArribaAbajo {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+    
